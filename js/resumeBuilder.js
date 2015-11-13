@@ -1,9 +1,10 @@
 // Console.log function test + defining variables for my name and role.
+/* not used anymore
 var name = "Uwe Sonderhoff";
 console.log(name);
 
 var role = "Product Manager";
-
+*/
 
 /*
 Replace method used with two different variables where a string is being replaced
@@ -26,22 +27,23 @@ console.log(email);
 console.log(NewEmail);
 
 
-// Combine .replace and .append/prepend between 2 js files and therewith adding content to a page by CSS ID
-var formattedName = HTMLheaderName.replace("%data%", name);
-$("#header").prepend(formattedName);
-
-var formattedRole = HTMLheaderRole.replace("%data%", role);
-$("#header").append(formattedRole);
-
 // Playing with JavaScript objects
 
 var bio = {
-  "name" = "Uwe Sonderhoff";
-  "role" = "Product Manager";
-  "contact-info" = "Leipzig";
-  "picture-url" = "url";
-  "welcome-message" = "Hello World";
-  "Skills" = "Many";
+  "name" : "Uwe Sonderhoff",
+  "role" : "Product Manager",
+  "contact-info" : "Leipzig",
+  "picture-url" : "url",
+  "welcomeMsg" : "Welcome Message",
+  "skills" : "Many"
 }
 
-$("#main").append(bio.name);
+// Combine .replace and .append/prepend between 2 js files and therewith adding content to a page by CSS ID
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+$("#header").prepend(formattedName);
+
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+$("#header").append(formattedRole);
+
+var formattedwelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
+$("#main").append(formattedwelcomeMsg);
