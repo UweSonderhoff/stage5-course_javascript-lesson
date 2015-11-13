@@ -6,7 +6,7 @@ var role = "Product Manager";
 
 
 /*
-Replace method used with two different variables where a string is being replaced 
+Replace method used with two different variables where a string is being replaced
 and the string is being rendered in html by selecting and CSS ID
 */
 var awesomeThoughts = "I am Uwe and I am AWESOME";
@@ -32,3 +32,16 @@ $("#header").prepend(formattedName);
 
 var formattedRole = HTMLheaderRole.replace("%data%", role);
 $("#header").append(formattedRole);
+
+// Playing with JavaScript objects
+
+var bio = {
+  "name" = "Uwe Sonderhoff";
+  "role" = "Product Manager";
+  "contact-info" = "Leipzig";
+  "picture-url" = "url";
+  "welcome-message" = "Hello World";
+  "Skills" = "Many";
+}
+
+$("#main").append(bio.name);
